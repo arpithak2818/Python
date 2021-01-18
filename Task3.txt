@@ -1,0 +1,103 @@
+#Task 3.1
+
+#Go through other inbuilt methods like remove(),count(),clear(),sort(),reverse()
+list1 = [57,43,"Arpitha","Chaksitha",True,False,25,12,35,69]
+list1
+
+O/P : [57,43,"Arpitha","Chaksitha",True,False,25,12,35,69]
+
+#Count()
+list1.count("Arpitha")
+O/P : 1
+
+#Reverse()
+list1.reverse()
+list1
+O/P:[69, 35, 12, 25, False, True, 'Chaksitha', 'Arpitha', 43, 57]
+
+#Remove()
+list1 = [57,43,"Arpitha","Chaksitha",True,False,25,12,35,69]
+list1
+list1.remove(35)
+list1
+O/P:[57, 43, 'Arpitha', 'Chaksitha', True, False, 25, 12, 69]
+
+#Clear()
+list1.clear()
+list1
+O/P:[]
+
+#Sort()
+list2=[100,98,47,56,95,75]
+list2
+O/P:[100,98,47,56,95,75]
+
+list2.sort()
+list2
+O/P:[47, 56, 75, 95, 98, 100]
+
+#Task 3.2
+
+#Create a list of length = 10 and access 5th to 8th data.
+l1 = [10,20,30,40,50,60,70,80,90,100]
+l1
+O/P:[10,20,30,40,50,60,70,80,90,100]
+
+l1[4:8:1]
+O/P:[50, 60, 70, 80]
+
+
+#Task 4
+
+#i)Add item 70 after 60 in the following Python list input
+l1 = [10,20,[30,40,[50,60],80],90,100]
+l1
+O/P:[10, 20, [30, 40, [50, 60], 80], 90, 100]
+
+l1[2][2].append(70)
+l1
+O/P:[10, 20, [30, 40, [50, 60, 70], 80], 90, 100]
+
+#Task 5
+
+dict1={
+    "april_batch":{
+        "student":{
+            "name":"Mike",
+            "marks":{
+                "python":80,
+                "maths":70,
+            }
+        }
+    }
+}
+dict1
+O/P:{'april_batch': {'student': {'name': 'Mike',
+   'marks': {'python': 80, 'maths': 70}}}}
+
+#access "Mike"
+dict1["april_batch"]["student"]["name"]
+O/P:'Mike'
+
+#access 80
+dict1["april_batch"]["student"]["marks"]["python"]
+O/P:80
+
+#Change "Mike" to "Arpitha"
+dict1["april_batch"]["student"]["name"]="Arpitha"
+dict1
+O/P:{'april_batch': {'student': {'name': 'Arpitha',
+   'marks': {'python': 80, 'maths': 70}}}}
+
+#Add ml=80 and dl=80 inside marks
+dict1["april_batch"]["student"]["marks"]["ml"]=80
+dict1["april_batch"]["student"]["marks"]["dl"]=80
+dict1
+O/P:{'april_batch': {'student': {'name': 'Arpitha',
+   'marks': {'python': 80, 'maths': 70, 'ml': 80, 'dl': 80}}}}
+
+
+
+
+
+
